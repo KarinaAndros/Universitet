@@ -1,0 +1,659 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Montserrat', sans-serif;  
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 27px;
+background: #312F2F;
+color: #FFF;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 60px;
+    font-weight: 500;
+    box-shadow: 0px 5px 24px 0px rgba(255, 255, 255, 0.19);
+}
+button:hover{
+    box-shadow: 0px 5px 24px 0px #4A0000;
+}
+/* nav  */
+.navigation{
+    position: absolute;
+    z-index: 1000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.nav_inner ul{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 30px;
+    
+}
+.nav_inner li{
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.nav_inner li:first-child{
+    margin-left: 0;
+}
+.nav_inner a{
+    color: #FFF;
+    text-decoration: none;
+}
+/* header slider  */
+.header_slider{
+    width: 100%;
+    position: relative;
+}
+/* logo */
+.logo{
+    width: 30%;
+    max-width: 430px;
+    height: 30%;
+    margin-left: 125px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.logo p{
+    color: #FFF;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 100;
+}
+/* end logo */
+.header_slider .slide{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    padding-top: 77px;
+    position: relative;
+}
+
+.svg_block{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.svg_block p{
+    width: 90%;
+    color: rgba(114, 114, 114, 0.63);
+    font-size: 24px;
+    position: absolute;
+    top: 29%;
+    left: 4%;
+    text-align: center;
+    transform: rotate(10deg);
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+.album{
+    max-width: 370px;
+    width: 80%;
+    height: 80%;
+    max-height: 370px;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+
+}
+
+.album_record{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 63px 13px rgba(169, 4, 4, 0.16);
+    position: relative;
+}
+.album button{
+    margin-top: 140px;
+}
+.album_record_disk{
+    max-width: 290px;
+    max-height: 290px;
+    width: 60%;
+    height: 80%;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 178px;
+    left: -50px;
+}
+
+.singer{
+    width: 410px;
+height: 410px;
+position: absolute;
+clip-path: polygon(0 0, 0% 100%, 100% 100%);
+color: #808080;
+bottom: 0;
+background: rgba(39, 39, 39, 0.46);
+display: flex;
+align-items: center;
+}
+.singer span{
+    transform: rotate(45deg);
+    font-size: 45px;
+    margin-top: 110px;
+
+}
+
+/* amounts */
+.amounts{
+    width: 100%;
+    background: black;
+    color: #FFF;
+    padding: 50px 0;
+    box-shadow: 0px 23px 250px 0px #000;
+
+}
+.amounts p{
+    width: 34%;
+    text-align: center;
+font-weight: 100;
+letter-spacing: 1.5px;
+}
+.amounts span{
+    font-size: 50px;
+font-weight: 500;
+}
+.amounts .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* slider with records */
+.slider{
+    width: 100%;
+    max-width: 1140px;
+}
+.slider_arrows{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    top: 45%;
+    z-index: 2000;
+}
+.slider_inner{
+    position: relative;
+}
+
+.slider_arrow{
+    width: 60px;
+    height: 60px;
+    background-color: #303030;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.slider_arrow:hover{
+    background-color: #A61B1BA6;
+}
+.record_slides{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.slider h3, .contacts h3, .block_with_form h3{
+    margin-top: 50px;
+    color: #303030;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.record{
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 30px;
+    position: relative;    
+    background-color: #000;
+}
+.record img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.title_record{
+    color: #000;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.title_record p{
+    line-height: 30px;
+}
+.title_record span{
+    color: #A61B1B;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.record_main{
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 0px 56px 92px 13px rgba(0, 0, 0, 0.74);
+    margin: 0 10px;
+    z-index: 1000;
+    position: relative;
+}
+
+.disk{
+    width: 61%;
+    max-width: 202px;
+    top: 53%;
+    left: -20%;
+    position: absolute;
+}
+.record_outside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.disk img{
+    width: 100%;
+    height: 100%;
+}
+.play{
+    max-width: 60px;
+    max-height: 60px;
+    width: 45%;
+    height: 45%;
+    
+    position: absolute;
+    z-index: 3000;
+    color: aliceblue;
+    top: 35%;
+    left: 40%;
+    font-size: 20px;
+    background-color: #000000C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.play:hover{
+    background-color: #A61B1BA6;
+}
+
+
+
+/* reviews */
+.reviews{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.review{
+width: 349px;
+height: 211px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+border-radius: 17px;
+background-color: #303030;
+color: #fff;
+text-align: center;
+position: relative;
+}
+.review a{
+    color: #fff;
+    text-transform: lowercase;
+    font-size: 12px;
+}
+.review a:hover{
+    color: #A61B1B;
+}
+
+.review_main{
+
+    margin: 0 31px;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #303030;
+}
+.review_main a{
+    color: #303030;
+}
+
+.review .avatar{
+    width: 107px;
+    height: 107px;
+border-radius: 100%;
+position: absolute;
+left: 50%;
+top: -50px;
+transform: translate(-50%, 0px);
+}
+.review_content {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.review_content p{
+    height: 50px;
+    margin: 0 20px;
+    overflow: hidden;
+    text-align: start;
+    font-size: 14px;
+}
+.review .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+/* contacts */
+
+.contacts{
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+    padding: 50px 0;
+margin-top: 50px;
+text-align: center;
+}
+.email{
+    margin-left: 10px;
+}
+.contacts .container{
+    display: flex;
+}
+.contacts h3{
+    color: #fff;
+    margin-top: 0;
+}
+.contacts a{
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.contact_inf{
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    margin-top: 36px;
+}
+.saits{
+    margin-top: 36px;
+    font-size: 20px;
+}
+.saits a{
+    font-size: 20px;
+}
+.saits .vk{
+    margin: 0 10px;
+}
+.contacts_inner{
+    width: 96%;
+    background: rgba(48, 48, 48, 0.92);
+    padding: 21px;
+    left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+iframe{
+    border-radius: 20px;
+    height: 302px;
+}
+/* form */
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+form input, textarea{
+    height: 50px;
+    border: none;
+    width: 100%;
+    border-radius: 17px;
+    color: #312F2F;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding-left: 10px;
+margin-bottom: 20px;
+outline: none;
+}
+textarea{
+    height: 100px;
+    padding-top: 10px;
+
+}
+.name, .surname{
+    width: 49%;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background: #312F2F;
+    padding: 50px 0;
+    font-size: 18px;
+}
+footer .saits{
+    margin-top: 0;
+}
+footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* adaptive */
+@media (max-width: 900px) {
+    .navigation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_inner ul{
+        margin-right: 0;
+    }
+    .logo{
+        width: 50%;
+        margin-left: 0;
+    }
+    .logo p{
+        display: none;
+    }
+    .svg_block p{
+        display: none;
+    }
+    .album {
+        right: 50%;
+        transform: translate(50%, 0%);
+    }
+    .album button {
+        margin-top: 84px;
+    }
+
+    .singer {
+        width: 100%;
+        padding: 44px 0;
+        height: 0;
+        clip-path: none;
+    }
+
+    .singer span{
+        font-size: 35px;
+        transform: none;
+        margin: 0 auto;
+    }
+    .slider{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .slider_arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+    .title_record {
+        margin-top: 32px;
+        font-size: 7px;
+    }
+    .title_record p {
+        line-height: 21px;
+    }
+    .record_main {
+        margin: 0 0px;
+    }
+    .slider h3{
+        font-size: 30px;
+    }
+    .play{
+        font-size: 15px;
+        left: 36%;
+    }
+
+
+    /* reviews */
+    .reviews{
+        margin: 0 auto;
+        margin-top: 70px;
+        width: 90%;
+        display: block;
+    }
+    .review {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 66px;
+    }
+ 
+
+
+    /*contacts*/
+    .contacts_inner {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .contacts a{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_inf{
+        justify-content: space-around;
+    }
+    .contact_inf p{
+        margin-top: 10px;
+    }
+    .saits{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contacts .container {
+        flex-direction: column;
+        display: contents;
+    }
+
+    iframe{
+        width: 90%;
+    }
+    /* form */
+    form{
+        width: 85%;
+    }
+    .name, .surname {
+        width: 100%;
+    }
+    /*footer */
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+    footer .saits {
+        margin-top: 10px;
+    }
+
+    .slider h3, .contacts h3, .block_with_form h3 {
+    font-size: 40px;
+    }
+}
+@media (max-width: 570px) {
+    .slider h3, .contacts h3, .block_with_form h3 {
+        font-size: 30px;
+        }
+        /* header */
+ 
+        .nav_inner ul {
+            font-size: 12px;
+        }
+        .logo{
+            width: 80%;
+        }
+        .album{
+            top: 27%;
+        }
+
+        /*amounts */
+        .amounts p {
+            font-size: 12px;
+        }
+        .amounts span {
+            font-size: 37px;
+        }
+   
+     
+           /* reviews */
+    .review {
+        width: 100%;
+    }
+
+        .contacts a, footer .container{
+            font-size: 15px;
+        }
+
+        .contact_inf p{
+            font-size: 12px;
+        }
+}
